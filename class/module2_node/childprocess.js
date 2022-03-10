@@ -4,4 +4,6 @@ let cp =require('child_process')
 // console.log(cp.execFileSync('calc'))   this outputs "buffer"
 
 
-cp.execFileSync('testi.js')
+let content=cp.execSync('node testi.js')
+
+console.log("output from another file "+content)

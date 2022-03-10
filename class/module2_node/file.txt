@@ -1,0 +1,2 @@
+hello ! i am a text file . I was created using node js fs module
+this was updated after using append file sync function
