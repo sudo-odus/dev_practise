@@ -1,0 +1,2 @@
+Hello from the new file i was created using writeFileSync of fs module
+ updated content using appendFileSync
