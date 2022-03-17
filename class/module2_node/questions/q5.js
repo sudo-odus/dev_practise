@@ -10,8 +10,9 @@ let path_of_the_file=path.join(__dirname,'..','module','to_move.txt');
 // console.log(path_of_the_file);
 let path_of_the_destination_file=path.join(__dirname,"to_move.txt");//file name is same 
 //because we are showing move operation not copy operation
-fs.copyFileSync(path_of_the_file,path_of_the_destination_file);
+if(!fs.existsSync(path_of_the_file))
+    fs.copyFileSync(path_of_the_file,path_of_the_destination_file);
 // if(fs.existsSync(path_of_the_destination_file))
 //     console.log("got the file");
-
+fs.unlinkSync(path_of_the_file);
 // awesome
