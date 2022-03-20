@@ -1,8 +1,6 @@
 let fs=require("fs");
 let path=require("path");
 
-
-
 // let input=process.argv;
 let folder_path=process.argv[2];     //path of the folder to be organised taken as input
 // let [,,input]=process.argv; //array destructuring... i like the concept
